@@ -84,7 +84,7 @@ public class AI : MonoBehaviour
             tempaicardvalue = tempaicardvalue + foraicardvalue[j];
         }
 
-         aicardvalue = tempaicardvalue;
+        aicardvalue = tempaicardvalue;
         
     }
 
@@ -98,12 +98,6 @@ public class AI : MonoBehaviour
             clicktime++;
         }
     }
-
-    public AIfirstcard a;
-    public AIsecondcard b;
-    public AIthirdcard c;
-    public AIforthcard d;
-    public AIfifthcard e;
     public void Endaigetcard()
     {
         while((aicardvalue <= 6.5) && (clicktime < 5))
@@ -111,12 +105,6 @@ public class AI : MonoBehaviour
             aicard[clicktime] = GameObject.Find("Main_Camera").GetComponent<Deck>().card[GetComponent<player>().i];
             GetComponent<player>().i++;
             countaicardvalue();
-
-            a.firstAIcardText.text = aicard[0].ToString();
-            b.secondAIcardText.text = aicard[1].ToString();
-            c.thirdAIcardText.text = aicard[2].ToString();
-            d.forthAIcardText.text = aicard[3].ToString();
-            e.fifthAIcardText.text = aicard[4].ToString();
             clicktime++;
         }
     }
