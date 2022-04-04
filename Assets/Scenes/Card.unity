@@ -974,12 +974,13 @@ MonoBehaviour:
   - 725
   Y_axis:
   - 350
-  - 325
-  - 300
-  - 325
+  - 275
+  - 250
+  - 275
   - 350
   player: {fileID: 1900045329}
   AI: {fileID: 1900045333}
+  angle: 50
 --- !u!1 &712762920
 GameObject:
   m_ObjectHideFlags: 0
@@ -1219,7 +1220,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1991481976}
-        m_MethodName: showpoker
+        m_MethodName: nextrounddelay
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2045,10 +2046,12 @@ MonoBehaviour:
   - 725
   Y_axis:
   - 350
-  - 325
-  - 300
-  - 325
+  - 275
+  - 250
+  - 275
   - 350
+  angle: 50
+  i: 1
 --- !u!1 &2053999008
 GameObject:
   m_ObjectHideFlags: 0
@@ -2349,17 +2352,17 @@ PrefabInstance:
     - target: {fileID: 7672221746995430964, guid: 2ab2dc80e52dab4469ca3c796ee5997f,
         type: 3}
       propertyPath: Y_axis.Array.data[1]
-      value: 100
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 7672221746995430964, guid: 2ab2dc80e52dab4469ca3c796ee5997f,
         type: 3}
       propertyPath: Y_axis.Array.data[2]
-      value: 125
+      value: 175
       objectReference: {fileID: 0}
     - target: {fileID: 7672221746995430964, guid: 2ab2dc80e52dab4469ca3c796ee5997f,
         type: 3}
       propertyPath: Y_axis.Array.data[3]
-      value: 100
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 7672221746995430964, guid: 2ab2dc80e52dab4469ca3c796ee5997f,
         type: 3}
