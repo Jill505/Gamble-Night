@@ -53,7 +53,8 @@ public class WinOrLose : MonoBehaviour
     }
 
 
-    public void showaicard()
+    public Text AIcardpointText;
+    public void showaicardandpoint()
     {
         for(int i = 0; i < 5; i++)
         {
@@ -65,5 +66,7 @@ public class WinOrLose : MonoBehaviour
             }
             angle = angle - 25;
         }
+
+        AIcardpointText.text = GameObject.Find("getcard").GetComponent<AI>().aicardvalue.ToString();
     }
 }

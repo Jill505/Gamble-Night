@@ -6,9 +6,12 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class Nextround : MonoBehaviour
 {
+    public void delaynextround()
+    {
+        Invoke( "nextround" , 2.0f);
+    }
     public void nextround()
     {
-        Invoke( "nextround" , 1.0f);
         SceneManager.LoadScene(8);
     }
 }
