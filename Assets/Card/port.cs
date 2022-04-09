@@ -1,29 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class port: MonoBehaviour
 {
-    GameObject targeter;
-    
+    public Text storycoin, normalcoin;
     void Start()
     {
-        targeter = GameObject.Find("godsystem");
-        /*
-        if (targeter.GetComponent < "ohMyGod" > ().sezizi == 1)
+        if (Mode.serilize == 1)
         {
-            print("好耶你成功的花式打開了遊玩模式 耶耶耶");
+            storycoin.text = Mode.storycoin.ToString();
+            GameObject.Find("storycoin").GetComponent<Text>().enabled = true;
         }
-
-        if (targeter.GetComponent < "ohMyGod" > ().sezizi == 1)
+        if (Mode.serilize == 2)
         {
-            print("好耶你成功的花式打開了故事模式 耶耶耶");
-        }*/
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+            normalcoin.text = Mode.normalcoin.ToString();
+            GameObject.Find("normalcoin").GetComponent<Text>().enabled = true;
+        }
     }
 }
