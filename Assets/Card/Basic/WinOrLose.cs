@@ -61,7 +61,7 @@ public class WinOrLose : MonoBehaviour
             if(AI.aicard[i] != 0)
             {
                 card[AI.clicktime - 1] = poker[(int)AI.aicard[i] - 1];
-                GameObject go = Instantiate(card[AI.clicktime - 1], new Vector2(X_axis[i], Y_axis[i]), transform.rotation);
+                GameObject go = Instantiate(card[AI.clicktime - 1], new Vector3(X_axis[i], Y_axis[i], 1*-1), transform.rotation);
                 go.transform.eulerAngles = new Vector3(0, 0, angle * -1);
             }
             angle = angle - 25;
