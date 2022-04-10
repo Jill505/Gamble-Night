@@ -32,8 +32,8 @@ public class SenceLoad : MonoBehaviour
         SceneManager.LoadScene(5);
     }
 
-    public void gogamble()
+    public void gocard()
     {
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene(8);
     }
 }

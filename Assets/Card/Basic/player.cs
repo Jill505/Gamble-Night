@@ -5,6 +5,31 @@ using UnityEngine.UI;
 
 public class player : MonoBehaviour
 {
+    public Button hit;
+    public float timecalcal = 0.0f;
+    public bool yeecalStart = false;
+    public void calcalStart()//計時開始
+    {
+        timecalcal = 0.0f;
+        yeecalStart = true;
+        hit.interactable = false;
+    }
+    void Update()
+    {
+        if(yeecalStart == true)
+        {
+            if(timecalcal >= 0.5)
+            {
+                yeecalStart = false;
+                hit.interactable = true;
+            }
+        }
+    }
+    void FixedUpdate()
+    {
+        timecalcal += Time.fixedDeltaTime;
+    }
+
     //建立玩家牌組陣列
     public double[] playercard = new double[5];
     public void Start()
@@ -16,7 +41,6 @@ public class player : MonoBehaviour
     }
     
     public int i = 0;//取得的卡片位置
-    
     public int clicktime = 0;
     //玩家抽牌方法
     public void playergetcard()
