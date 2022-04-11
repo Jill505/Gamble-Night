@@ -89,8 +89,22 @@ public class AI : MonoBehaviour
     }
 
     public int clicktime = 0;
+    public WinOrLose WinOrLose;
+    public float value;
     public void aigetcard()
     {
+        if(Winorlose.win > 5)
+        {
+            value = 6.5;
+        }
+        if(WinOrLose.win <= 5)
+        {
+            value = 6
+        }
+        if(WinOrLose.win < 0)
+        {
+            value = 5.5;
+        }
         if(aicardvalue <= 6.5)
         {
             aicard[clicktime] = GameObject.Find("Main_Camera").GetComponent<Deck>().card[GetComponent<player>().i];
