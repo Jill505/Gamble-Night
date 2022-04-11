@@ -13,8 +13,7 @@ public class WinOrLose : MonoBehaviour
     public player player;
     public AI AI;
     public int angle = 50;
-
-    public int win = 0;
+    
     public void Start()
     {
         GameObject.Find("Win").GetComponent<Text>().enabled = false;
@@ -29,12 +28,12 @@ public class WinOrLose : MonoBehaviour
         if((AI.clicktime == 5) && (aicardvalue <=10.5))
         {
             GameObject.Find("Lose").GetComponent<Text>().enabled = true;
-            win = win - 1;
+            Level.win = Level.win - 1;
         }
         else if((player.clicktime == 5) && (playercardvalue <=10.5))
         {
             GameObject.Find("Win").GetComponent<Text>().enabled = true;
-            win = win + 1;
+            Level.win = Level.win + 1;
         }
 
         if (aicardvalue > 10.5)
@@ -49,12 +48,12 @@ public class WinOrLose : MonoBehaviour
         if (aicardvalue - playercardvalue >= 0)
         {
             GameObject.Find("Lose").GetComponent<Text>().enabled = true;
-            win = win - 1;
+            Level.win = Level.win - 1;
         }
         else
         {
             GameObject.Find("Win").GetComponent<Text>().enabled = true;
-            win = win + 1;
+            Level.win = Level.win + 1;
         }
     }
 
