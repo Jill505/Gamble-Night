@@ -1,20 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class BackToMain : MonoBehaviour
+public class storyDiss : MonoBehaviour
 {
-    public void toMain()
-    {
-        SceneManager.LoadScene(0);
-    }
-    /* 故事模式時消失
+    // Start is called before the first frame update
     void Start()
     {
         if (bgSystem.isGambling == true)
         {
             gameObject.SetActive(false);
         }
-    }*/
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
 }

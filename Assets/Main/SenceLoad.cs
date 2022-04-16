@@ -34,6 +34,6 @@ public class SenceLoad : MonoBehaviour
 
     public void gocard()
     {
-        SceneManager.LoadScene(8);
+        SceneManager.LoadScene(7);
     }
 }

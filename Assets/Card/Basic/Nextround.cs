@@ -12,6 +12,6 @@ public class Nextround : MonoBehaviour
     }
     public void nextround()
     {
-        SceneManager.LoadScene(8);
+        SceneManager.LoadScene(7);
     }
 }
