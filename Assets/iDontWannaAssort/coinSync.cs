@@ -27,7 +27,7 @@ public class coinSync : MonoBehaviour
     {
         if (mode == true)
         {
-            gameObject.GetComponent<Text>().text = "籌碼數量：" + storyTeller.GetComponent<storyGam>().storyCoin;
+            gameObject.GetComponent<Text>().text = "籌碼數量：" + GameObject.Find("GamestoryTeller").GetComponent<storyGam>().storyCoin;
         }
         else
         {

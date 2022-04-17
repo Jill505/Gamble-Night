@@ -13,13 +13,11 @@ public class WinOrLose : MonoBehaviour
     public player player;
     public AI AI;
     public int angle = 50;
-    
     public void Start()
     {
         GameObject.Find("Win").GetComponent<Text>().enabled = false;
         GameObject.Find("Lose").GetComponent<Text>().enabled = false;
     }
-
     public void winorlose()
     {
         playercardvalue = player.playercardvalue;
@@ -29,11 +27,27 @@ public class WinOrLose : MonoBehaviour
         {
             GameObject.Find("Lose").GetComponent<Text>().enabled = true;
             Level.win = Level.win - 1;
+            if(bgSystem.isGambling == false)
+            {
+                bgSystem.gold-=100;
+            }
+            if(bgSystem.isGambling == true)
+            {
+                GameObject.Find("GamestoryTeller").GetComponent<storyGam>().storyCoin-=100;
+            }
         }
         else if((player.clicktime == 5) && (playercardvalue <=10.5))
         {
             GameObject.Find("Win").GetComponent<Text>().enabled = true;
             Level.win = Level.win + 1;
+            if(bgSystem.isGambling == false)
+            {
+                bgSystem.gold+=100;
+            }
+            if(bgSystem.isGambling == true)
+            {
+                GameObject.Find("GamestoryTeller").GetComponent<storyGam>().storyCoin+=100;
+            }
         }
 
         if (aicardvalue > 10.5)
@@ -49,11 +63,27 @@ public class WinOrLose : MonoBehaviour
         {
             GameObject.Find("Lose").GetComponent<Text>().enabled = true;
             Level.win = Level.win - 1;
+            if(bgSystem.isGambling == false)
+            {
+                bgSystem.gold-=100;
+            }
+            if(bgSystem.isGambling == true)
+            {
+                GameObject.Find("GamestoryTeller").GetComponent<storyGam>().storyCoin-=100;
+            }
         }
         else
         {
             GameObject.Find("Win").GetComponent<Text>().enabled = true;
             Level.win = Level.win + 1;
+            if(bgSystem.isGambling == false)
+            {
+                bgSystem.gold+=100;
+            }
+            if(bgSystem.isGambling == true)
+            {
+                GameObject.Find("GamestoryTeller").GetComponent<storyGam>().storyCoin+=100;
+            }
         }
     }
 

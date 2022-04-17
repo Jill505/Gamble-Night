@@ -8,10 +8,25 @@ public class Nextround : MonoBehaviour
 {    
     public void delaynextround()
     {
-        Invoke( "nextround" , 2.0f);
+        Invoke( "nextround" , 4.0f);
     }
     public void nextround()
     {
-        SceneManager.LoadScene(7);
+        if(GameObject.Find("VeryLose").GetComponent<Text>().enabled == true)
+        {
+            SceneManager.LoadScene(0);
+        }
+        else
+        {
+            SceneManager.LoadScene(7);
+        }
+    }
+    public void VeryLose()
+    {
+        if(GameObject.Find("storyTeller").GetComponent<storyGam>().storyCoin <= 100 || bgSystem.gold <= 100)
+        {
+            GameObject.Find("Lose").GetComponent<Text>().enabled = false;
+            GameObject.Find("VeryLose").GetComponent<Text>().enabled = true;
+        }
     }
 }
