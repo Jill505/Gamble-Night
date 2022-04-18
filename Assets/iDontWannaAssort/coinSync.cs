@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class coinSync : MonoBehaviour
 {
     
-    bool mode;//T=故事 F=普通
+    public bool mode;//T=故事 F=普通
     // Start is called before the first frame update
     void Start()
     {
@@ -25,13 +25,22 @@ public class coinSync : MonoBehaviour
     GameObject storyTeller;
     void Update()
     {
-        if (mode == true)
+        if (bgSystem.isGambling == true)
         {
-            gameObject.GetComponent<Text>().text = "籌碼數量：" + GameObject.Find("GamestoryTeller").GetComponent<storyGam>().storyCoin;
+            mode = true;
         }
         else
         {
-            gameObject.GetComponent<Text>().text = "籌碼數量：" + bgSystem.gold;
+            mode = false;
+        }
+        
+        if (mode == true)
+        {
+            gameObject.GetComponent<Text>().text = "籌碼數量A：" + GameObject.Find("GamestoryTeller").GetComponent<storyGam>().storyCoin;
+        }
+        else
+        {
+            gameObject.GetComponent<Text>().text = "籌碼數量B：" + bgSystem.gold;
         }
     }
 }

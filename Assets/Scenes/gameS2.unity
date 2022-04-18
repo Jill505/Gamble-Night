@@ -280,6 +280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 528c7c43fe5d66b40a3a07de0c72680b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  storyCoin: 500
 --- !u!4 &305606275
 Transform:
   m_ObjectHideFlags: 0
@@ -424,6 +425,7 @@ GameObject:
   - component: {fileID: 704483443}
   - component: {fileID: 704483514}
   - component: {fileID: 704483513}
+  - component: {fileID: 704483515}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -2253,6 +2255,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 704483509}
   commandList:
+  - {fileID: 704483515}
   - {fileID: 704483508}
   - {fileID: 704483498}
   - {fileID: 704483499}
@@ -2348,8 +2351,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 704483510}
-  selectedCommands:
-  - {fileID: 704483513}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -2421,6 +2423,23 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &704483515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704483442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 79
+  indentLevel: 0
+  soundClip: {fileID: 8300000, guid: 27eab68aabc6d4f45947a0f50c014c7b, type: 3}
+  volume: 1
+  waitUntilFinished: 0
 --- !u!1 &715953340
 GameObject:
   m_ObjectHideFlags: 0
@@ -2845,6 +2864,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1796356930
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1796356931}
+  m_Layer: 0
+  m_Name: teller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1796356931
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796356930}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 220.10529, y: 62.40471, z: -24.957697}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1913295925
 GameObject:
