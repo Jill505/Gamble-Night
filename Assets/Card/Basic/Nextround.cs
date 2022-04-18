@@ -8,7 +8,7 @@ public class Nextround : MonoBehaviour
 {    
     public void delaynextround()
     {
-        Invoke( "nextround" , 4.0f);
+        Invoke( "nextround" , 2.5f);
     }
     public void nextround()
     {
@@ -21,11 +21,12 @@ public class Nextround : MonoBehaviour
             SceneManager.LoadScene(7);
         }
     }
-    public void VeryLose()
+    public void VeryLose()//這邊把你踢出賭場
     {
-        if(GameObject.Find("storyTeller").GetComponent<storyGam>().storyCoin <= 100 || bgSystem.gold <= 100)
+        if(bgSystem.gold <= 0)
         {
             GameObject.Find("Lose").GetComponent<Text>().enabled = false;
+            GameObject.Find("Win").GetComponent<Text>().enabled = false;
             GameObject.Find("VeryLose").GetComponent<Text>().enabled = true;
         }
     }

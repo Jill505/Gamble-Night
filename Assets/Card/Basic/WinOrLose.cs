@@ -17,8 +17,14 @@ public class WinOrLose : MonoBehaviour
     {
         GameObject.Find("Win").GetComponent<Text>().enabled = false;
         GameObject.Find("Lose").GetComponent<Text>().enabled = false;
+        syncer = GameObject.Find("coin");
     }
-    public void winorlose()
+
+
+    //方便複製用 syncer.GetComponent<coinSync>().mode
+    public GameObject syncer;
+ 
+    public void winorlose()//輸贏判斷
     {
         playercardvalue = player.playercardvalue;
         aicardvalue = AI.aicardvalue;
@@ -27,26 +33,28 @@ public class WinOrLose : MonoBehaviour
         {
             GameObject.Find("Lose").GetComponent<Text>().enabled = true;
             Level.win = Level.win - 1;
-            if(bgSystem.isGambling == false)
+            if(syncer.GetComponent<coinSync>().mode == false)
             {
                 bgSystem.gold-=100;
+                saveCoin();
             }
-            if(bgSystem.isGambling == true)
+            if(syncer.GetComponent<coinSync>().mode == true)
             {
-                GameObject.Find("GamestoryTeller").GetComponent<storyGam>().storyCoin-=100;
+                GameObject.Find("storyTeller").GetComponent<storyGam>().storyCoin-=100;
             }
         }
         else if((player.clicktime == 5) && (playercardvalue <=10.5))
         {
             GameObject.Find("Win").GetComponent<Text>().enabled = true;
             Level.win = Level.win + 1;
-            if(bgSystem.isGambling == false)
+            if(syncer.GetComponent<coinSync>().mode == false)
             {
                 bgSystem.gold+=100;
+                saveCoin();
             }
-            if(bgSystem.isGambling == true)
+            if(syncer.GetComponent<coinSync>().mode == true)
             {
-                GameObject.Find("GamestoryTeller").GetComponent<storyGam>().storyCoin+=100;
+                GameObject.Find("storyTeller").GetComponent<storyGam>().storyCoin+=100;
             }
         }
 
@@ -63,26 +71,28 @@ public class WinOrLose : MonoBehaviour
         {
             GameObject.Find("Lose").GetComponent<Text>().enabled = true;
             Level.win = Level.win - 1;
-            if(bgSystem.isGambling == false)
+            if(syncer.GetComponent<coinSync>().mode == false)
             {
                 bgSystem.gold-=100;
+                saveCoin();
             }
-            if(bgSystem.isGambling == true)
+            if(syncer.GetComponent<coinSync>().mode == true)
             {
-                GameObject.Find("GamestoryTeller").GetComponent<storyGam>().storyCoin-=100;
+                GameObject.Find("storyTeller").GetComponent<storyGam>().storyCoin-=100;
             }
         }
         else
         {
             GameObject.Find("Win").GetComponent<Text>().enabled = true;
             Level.win = Level.win + 1;
-            if(bgSystem.isGambling == false)
+            if(syncer.GetComponent<coinSync>().mode == false)
             {
                 bgSystem.gold+=100;
+                saveCoin();
             }
-            if(bgSystem.isGambling == true)
+            if(syncer.GetComponent<coinSync>().mode == true)
             {
-                GameObject.Find("GamestoryTeller").GetComponent<storyGam>().storyCoin+=100;
+                GameObject.Find("storyTeller").GetComponent<storyGam>().storyCoin+=100;
             }
         }
     }
@@ -103,5 +113,11 @@ public class WinOrLose : MonoBehaviour
         }
 
         AIcardpointText.text = GameObject.Find("getcard").GetComponent<AI>().aicardvalue.ToString();
+    }
+
+
+    void saveCoin()
+    {
+        PlayerPrefs.SetInt("GambleGold", bgSystem.gold);
     }
 }

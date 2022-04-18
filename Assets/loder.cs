@@ -2,15 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class bgSystem : MonoBehaviour
+public class loder : MonoBehaviour
 {
-    static public int gold;
-    static public bool isGambling = false;//true->故事模式 false-->正常遊玩;
-    
     // Start is called before the first frame update
     void Start()
     {
-        
+        bgSystem.gold = PlayerPrefs.GetInt("GambleGold");
     }
 
     // Update is called once per frame

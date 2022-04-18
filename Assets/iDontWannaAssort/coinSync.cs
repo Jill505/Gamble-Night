@@ -25,6 +25,7 @@ public class coinSync : MonoBehaviour
     GameObject storyTeller;
     void Update()
     {
+        /*
         if (bgSystem.isGambling == true)
         {
             mode = true;
@@ -32,11 +33,11 @@ public class coinSync : MonoBehaviour
         else
         {
             mode = false;
-        }
+        }*/
         
         if (mode == true)
         {
-            gameObject.GetComponent<Text>().text = "籌碼數量A：" + GameObject.Find("GamestoryTeller").GetComponent<storyGam>().storyCoin;
+            gameObject.GetComponent<Text>().text = "籌碼數量A：" + storyTeller.GetComponent<storyGam>().storyCoin;
         }
         else
         {
