@@ -7,6 +7,14 @@ public class storyGam : MonoBehaviour
     void Start()
     {
         //bgSystem.isGambling = true;
+        if (storyCoin <= 0)
+        {
+
+        }
+        if (storyCoin >= 1000)
+        {
+
+        }
     }
     public int storyCoin = 500;
 }
