@@ -7,7 +7,8 @@ public class returnZero : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        setZeroo = 0;
+        bgSystem.gold = PlayerPrefs.GetInt("GambleGold");
+        //setZeroo = 0;
     }
 
     // Update is called once per frame
@@ -15,10 +16,11 @@ public class returnZero : MonoBehaviour
     {
         
     }
-    int setZeroo;
+    //int setZeroo;
     void setZero()
     {
+        bgSystem.gold = 0;
         //setZeroo == PlayerPrefs.GetInt("GambleGold");
-        PlayerPrefs.SetInt("GambleGold", setZeroo);
+        PlayerPrefs.SetInt("GambleGold", bgSystem.gold);
     }
 }
