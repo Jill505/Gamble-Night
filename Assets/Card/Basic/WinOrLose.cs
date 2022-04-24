@@ -23,62 +23,84 @@ public class WinOrLose : MonoBehaviour
 
     //方便複製用 syncer.GetComponent<coinSync>().mode
     public GameObject syncer;
- 
+    public bool result;
     public void winorlose()//輸贏判斷
     {
         playercardvalue = player.playercardvalue;
         aicardvalue = AI.aicardvalue;
         
-        if((player.clicktime == 5) && (playercardvalue <=10.5))
+        if(player.clicktime == 5 && playercardvalue <=10.5)
+        {
+            result = true;
+        }
+        else
+        {
+            if(aicardvalue > 10.5)
+            {
+                if(playercardvalue > 10.5)
+                {
+                    result = false;
+                }
+                if(playercardvalue <= 10.5)
+                {
+                    result = true;
+                }
+            }
+            if(aicardvalue == 10.5)
+            {
+                result = false;
+            }
+            if(aicardvalue < 10.5)
+            {
+                if(playercardvalue > 10.5)
+                {
+                    result = false;
+                }
+                if(playercardvalue == 10.5)
+                {
+                    result = true;
+                }
+                if(playercardvalue < 10.5)
+                {
+                    if(aicardvalue - playercardvalue >= 0)
+                    {
+                        result = false;
+                    }
+                    if(aicardvalue - playercardvalue < 0)
+                    {
+                        result = true;
+                    }
+                }
+            }
+        }
+
+            
+        if(result == true)
         {
             GameObject.Find("Win").GetComponent<Text>().enabled = true;
             Level.win = Level.win + 1;
-            if(syncer.GetComponent<coinSync>().mode == false)
+            if(bgSystem.isGambling == false)
             {
                 bgSystem.gold+=100;
                 saveCoin();
             }
-            if(syncer.GetComponent<coinSync>().mode == true)
+            if(bgSystem.isGambling == true)
             {
                 storyGam.storyCoin+=100;
             }
         }
-
-        if (aicardvalue > 10.5)
-        {
-            aicardvalue = aicardvalue - 10.5;
-        }
-        if (playercardvalue > 10.5)
-        {
-            playercardvalue = playercardvalue - 10.5;
-        }
-
-        if (aicardvalue - playercardvalue >= 0)
+        if(result == false)
         {
             GameObject.Find("Lose").GetComponent<Text>().enabled = true;
             Level.win = Level.win - 1;
-            if(syncer.GetComponent<coinSync>().mode == false)
+            if(bgSystem.isGambling == false)
             {
                 bgSystem.gold-=100;
                 saveCoin();
             }
-            if(syncer.GetComponent<coinSync>().mode == true)
+            if(bgSystem.isGambling == true)
             {
                 storyGam.storyCoin-=100;
-            }
-        }
-        else
-        {
-            GameObject.Find("Win").GetComponent<Text>().enabled = true;
-            Level.win = Level.win + 1;
-            if(syncer.GetComponent<coinSync>().mode == false)
-            {
-                bgSystem.gold+=100;
-                saveCoin();
-            }
-            if(syncer.GetComponent<coinSync>().mode == true)
-            {
-                storyGam.storyCoin+=100;
             }
         }
     }

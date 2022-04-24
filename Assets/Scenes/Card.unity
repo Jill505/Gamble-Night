@@ -395,7 +395,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 528c7c43fe5d66b40a3a07de0c72680b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  storyCoin: 500
 --- !u!4 &266508611
 Transform:
   m_ObjectHideFlags: 0
@@ -735,6 +734,7 @@ MonoBehaviour:
   AI: {fileID: 1900045333}
   angle: 50
   syncer: {fileID: 530388490}
+  result: 0
   AIcardpointText: {fileID: 1577742794}
 --- !u!114 &519420034
 MonoBehaviour:
@@ -748,8 +748,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 122435b145dd7294dbdb7d11e6f2fab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  instructions: {fileID: 5921729537144935570, guid: e6cb03e24680ab245851bf98f9f2ed7b,
+  instructions: {fileID: 5429571279561660339, guid: e6cb03e24680ab245851bf98f9f2ed7b,
     type: 3}
+  hit: {fileID: 962121618}
+  stand: {fileID: 1833805601}
 --- !u!1 &530388490
 GameObject:
   m_ObjectHideFlags: 0
@@ -998,7 +1000,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 31.159912, y: -49.02997}
+  m_AnchoredPosition: {x: 430, y: -404.28}
   m_SizeDelta: {x: 100, y: 98.70322}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &701607955
@@ -1115,7 +1117,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 962121619}
   m_OnClick:
     m_PersistentCalls:
@@ -1983,7 +1985,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1833805602}
   m_OnClick:
     m_PersistentCalls:
