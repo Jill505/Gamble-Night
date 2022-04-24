@@ -13,7 +13,7 @@ public class ImportAIPoker : MonoBehaviour
     public float[] Y_axis = new float[5];
     public int angle = 50;
     public int i = 1;
-    void Start()
+    public void tempplace()
     {
         for(int i = 0; i < 5; i++)
         {

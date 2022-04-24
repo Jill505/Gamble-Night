@@ -7,7 +7,6 @@ public class coinSync : MonoBehaviour
 {
     
     public bool mode;//T=故事 F=普通
-    // Start is called before the first frame update
     void Start()
     {
         if (bgSystem.isGambling == true)
@@ -20,8 +19,6 @@ public class coinSync : MonoBehaviour
         }
         storyTeller = GameObject.Find("storyTeller");
     }
-
-    // Update is called once per frame
     GameObject storyTeller;
     void Update()
     {
@@ -37,7 +34,7 @@ public class coinSync : MonoBehaviour
         
         if (mode == true)
         {
-            gameObject.GetComponent<Text>().text = "籌碼數量A：" + storyTeller.GetComponent<storyGam>().storyCoin;
+            gameObject.GetComponent<Text>().text = "籌碼數量A：" + storyGam.storyCoin.ToString();
         }
         else
         {

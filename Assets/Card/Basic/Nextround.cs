@@ -8,22 +8,27 @@ public class Nextround : MonoBehaviour
 {    
     public void delaynextround()
     {
+        hit.interactable = false;
         Invoke( "nextround" , 2.5f);
     }
+
+    public Button hit;
+    public GameObject EventHorizon;
     public void nextround()
     {
         if(GameObject.Find("VeryLose").GetComponent<Text>().enabled == true)
         {
             SceneManager.LoadScene(0);
+            Destroy(EventHorizon);
         }
         else
         {
             SceneManager.LoadScene(7);
         }
     }
-    public void VeryLose()//這邊把你踢出賭場
+    public void VeryLose()
     {
-        if(bgSystem.gold <= 0)
+        if(bgSystem.isGambling == false && bgSystem.gold <= 0)
         {
             GameObject.Find("Lose").GetComponent<Text>().enabled = false;
             GameObject.Find("Win").GetComponent<Text>().enabled = false;

@@ -29,21 +29,7 @@ public class WinOrLose : MonoBehaviour
         playercardvalue = player.playercardvalue;
         aicardvalue = AI.aicardvalue;
         
-        if((AI.clicktime == 5) && (aicardvalue <=10.5))
-        {
-            GameObject.Find("Lose").GetComponent<Text>().enabled = true;
-            Level.win = Level.win - 1;
-            if(syncer.GetComponent<coinSync>().mode == false)
-            {
-                bgSystem.gold-=100;
-                saveCoin();
-            }
-            if(syncer.GetComponent<coinSync>().mode == true)
-            {
-                GameObject.Find("storyTeller").GetComponent<storyGam>().storyCoin-=100;
-            }
-        }
-        else if((player.clicktime == 5) && (playercardvalue <=10.5))
+        if((player.clicktime == 5) && (playercardvalue <=10.5))
         {
             GameObject.Find("Win").GetComponent<Text>().enabled = true;
             Level.win = Level.win + 1;
@@ -54,17 +40,17 @@ public class WinOrLose : MonoBehaviour
             }
             if(syncer.GetComponent<coinSync>().mode == true)
             {
-                GameObject.Find("storyTeller").GetComponent<storyGam>().storyCoin+=100;
+                storyGam.storyCoin+=100;
             }
         }
 
         if (aicardvalue > 10.5)
         {
-            aicardvalue = 0;
+            aicardvalue = aicardvalue - 10.5;
         }
         if (playercardvalue > 10.5)
         {
-            playercardvalue = 0;
+            playercardvalue = playercardvalue - 10.5;
         }
 
         if (aicardvalue - playercardvalue >= 0)
@@ -78,7 +64,7 @@ public class WinOrLose : MonoBehaviour
             }
             if(syncer.GetComponent<coinSync>().mode == true)
             {
-                GameObject.Find("storyTeller").GetComponent<storyGam>().storyCoin-=100;
+                storyGam.storyCoin-=100;
             }
         }
         else
@@ -92,7 +78,7 @@ public class WinOrLose : MonoBehaviour
             }
             if(syncer.GetComponent<coinSync>().mode == true)
             {
-                GameObject.Find("storyTeller").GetComponent<storyGam>().storyCoin+=100;
+                storyGam.storyCoin+=100;
             }
         }
     }

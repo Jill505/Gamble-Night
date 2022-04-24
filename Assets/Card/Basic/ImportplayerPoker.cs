@@ -11,7 +11,7 @@ public class ImportplayerPoker : MonoBehaviour
     public float[] X_axis = new float[5];
     public float[] Y_axis = new float[5];
     public int angle = 50;
-    void Start()
+    public void tempplace()
     {
         for(int i = 0; i < 5; i++)
         {

@@ -124,35 +124,7 @@ public class player : MonoBehaviour
             tempplayercardvalue = tempplayercardvalue + forplayercardvalue[j];
         }
 
-         playercardvalue = tempplayercardvalue;
+        playercardvalue = tempplayercardvalue;
         
-    }
-    public double[] forplayercardsuit = new double[5];
-    public void playercardsuit()
-    {
-        for(int j = 0; j <=4; j++)
-        {
-            forplayercardsuit[j] = playercard[j];
-        }
-        
-        for(int suit = 0; suit <= 4; suit++)
-        {
-            if((forplayercardsuit[suit] % 4 == 0) && (forplayercardsuit[suit] != 0))
-            {
-                forplayercardsuit[suit] = 1;
-            }
-            else if((forplayercardsuit[suit] % 4 == 1) && (forplayercardsuit[suit] != 0))
-            {
-                forplayercardsuit[suit] = 2;
-            }
-            else if((forplayercardsuit[suit] % 4 == 1) && (forplayercardsuit[suit] != 0))
-            {
-                forplayercardsuit[suit] = 3;
-            }
-            else if((forplayercardsuit[suit] % 4 == 3) && (forplayercardsuit[suit] != 0))
-            {
-                forplayercardsuit[suit] = 4;
-            }
-        }
     }
 }

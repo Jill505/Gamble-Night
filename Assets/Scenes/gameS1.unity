@@ -528,11 +528,6 @@ GameObject:
   - component: {fileID: 373379115}
   - component: {fileID: 373379114}
   - component: {fileID: 373379113}
-  - component: {fileID: 373379112}
-  - component: {fileID: 373379110}
-  - component: {fileID: 373379109}
-  - component: {fileID: 373379108}
-  - component: {fileID: 373379105}
   - component: {fileID: 373379111}
   - component: {fileID: 373379117}
   - component: {fileID: 373379124}
@@ -541,6 +536,11 @@ GameObject:
   - component: {fileID: 373379121}
   - component: {fileID: 373379120}
   - component: {fileID: 373379119}
+  - component: {fileID: 373379105}
+  - component: {fileID: 373379108}
+  - component: {fileID: 373379109}
+  - component: {fileID: 373379112}
+  - component: {fileID: 373379110}
   - component: {fileID: 373379118}
   m_Layer: 0
   m_Name: Flowchart
@@ -643,7 +643,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 64.5, y: 94.5}
+  scrollPos: {x: 170.57039, y: 17.220732}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 383
@@ -655,9 +655,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 373379083}
-  selectedCommands:
-  - {fileID: 373379118}
+  - {fileID: 373379101}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -941,11 +940,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 373379117}
   - {fileID: 373379018}
-  - {fileID: 373379112}
   - {fileID: 373379105}
-  - {fileID: 373379108}
-  - {fileID: 373379109}
-  - {fileID: 373379110}
   - {fileID: 373379017}
   - {fileID: 373379015}
   - {fileID: 373379006}
@@ -1095,13 +1090,13 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 373379048}
-  - {fileID: 373379032}
-  - {fileID: 373379033}
   - {fileID: 373379107}
   - {fileID: 373379113}
   - {fileID: 373379114}
   - {fileID: 373379115}
   - {fileID: 373379116}
+  - {fileID: 373379032}
+  - {fileID: 373379033}
   - {fileID: 373379034}
   - {fileID: 373379035}
   - {fileID: 373379036}
@@ -1138,6 +1133,7 @@ MonoBehaviour:
   - {fileID: 373379095}
   - {fileID: 373379030}
   - {fileID: 373379031}
+  - {fileID: 373379108}
   - {fileID: 373379085}
   - {fileID: 373379086}
   - {fileID: 373379087}
@@ -2697,7 +2693,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 31.5
+    x: 30.5
     y: 10.5
     width: 118
     height: 40
@@ -2710,11 +2706,11 @@ MonoBehaviour:
   commandList:
   - {fileID: 373379082}
   - {fileID: 373379081}
-  - {fileID: 373379071}
   - {fileID: 373379123}
   - {fileID: 373379120}
   - {fileID: 373379121}
   - {fileID: 373379122}
+  - {fileID: 373379071}
   - {fileID: 373379072}
   - {fileID: 373379073}
   - {fileID: 373379074}
@@ -2727,9 +2723,11 @@ MonoBehaviour:
   - {fileID: 373379080}
   - {fileID: 373379062}
   - {fileID: 373379063}
+  - {fileID: 373379109}
+  - {fileID: 373379110}
+  - {fileID: 373379112}
   - {fileID: 373379064}
   - {fileID: 373379065}
-  - {fileID: 373379118}
   - {fileID: 373379066}
   - {fileID: 373379067}
   - {fileID: 373379068}
@@ -2741,6 +2739,7 @@ MonoBehaviour:
   - {fileID: 373379057}
   - {fileID: 373379058}
   - {fileID: 373379059}
+  - {fileID: 373379118}
   - {fileID: 373379055}
   - {fileID: 373379053}
   - {fileID: 373379054}
@@ -3217,7 +3216,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 158.5
+    x: 159.5
     y: 44.5
     width: 119
     height: 40
@@ -3308,14 +3307,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 171
+  itemId: 180
   indentLevel: 0
-  soundClip: {fileID: 8300000, guid: 03d80150830d569488141156979cf7a0, type: 3}
+  soundClip: {fileID: 8300000, guid: 0a3bb39153817114786a17c67357a2dc, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &373379106
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3327,12 +3326,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 161
   indentLevel: 0
-  soundClip: {fileID: 8300000, guid: a493689319bb0db478e03dccc94b6447, type: 3}
+  soundClip: {fileID: 8300000, guid: 366f0080ee55ab448b10b156b642538f, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &373379107
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3359,9 +3358,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 170
+  itemId: 181
   indentLevel: 0
-  soundClip: {fileID: 8300000, guid: 03d80150830d569488141156979cf7a0, type: 3}
+  soundClip: {fileID: 8300000, guid: 0a3bb39153817114786a17c67357a2dc, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &373379109
@@ -3376,9 +3375,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 169
+  itemId: 182
   indentLevel: 0
-  soundClip: {fileID: 8300000, guid: 03d80150830d569488141156979cf7a0, type: 3}
+  soundClip: {fileID: 8300000, guid: 036b8599fdc4e1e499471e5c232eb3fc, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &373379110
@@ -3393,14 +3392,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 168
+  itemId: 184
   indentLevel: 0
-  soundClip: {fileID: 8300000, guid: 03d80150830d569488141156979cf7a0, type: 3}
+  soundClip: {fileID: 8300000, guid: 036b8599fdc4e1e499471e5c232eb3fc, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &373379111
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3427,14 +3426,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 167
+  itemId: 183
   indentLevel: 0
-  soundClip: {fileID: 8300000, guid: 03d80150830d569488141156979cf7a0, type: 3}
+  soundClip: {fileID: 8300000, guid: 036b8599fdc4e1e499471e5c232eb3fc, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &373379113
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3451,7 +3450,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &373379114
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3468,7 +3467,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &373379115
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3485,7 +3484,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &373379116
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3502,7 +3501,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &373379117
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3529,14 +3528,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 180
+  itemId: 185
   indentLevel: 0
-  soundClip: {fileID: 8300000, guid: 03d80150830d569488141156979cf7a0, type: 3}
+  soundClip: {fileID: 8300000, guid: 0a3bb39153817114786a17c67357a2dc, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &373379119
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3553,7 +3552,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &373379120
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3570,7 +3569,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &373379121
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3587,7 +3586,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &373379122
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3604,7 +3603,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &373379123
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3621,7 +3620,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &373379124
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}

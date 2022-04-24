@@ -16,5 +16,5 @@ public class storyGam : MonoBehaviour
 
         }
     }
-    public int storyCoin = 500;
+    public static int storyCoin = 500;
 }
