@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Alwaysplay : MonoBehaviour
+public class AlwaysplayCardBGM : MonoBehaviour
 {
-    static Alwaysplay _instance;
-    public static Alwaysplay instance
+    static AlwaysplayCardBGM _instance;
+    public static AlwaysplayCardBGM instance
     {
         get
         {
             if (_instance == null)
             {
-                _instance = FindObjectOfType<Alwaysplay>();
+                _instance = FindObjectOfType<AlwaysplayCardBGM>();
                 DontDestroyOnLoad(_instance.gameObject);
             }
             return _instance;

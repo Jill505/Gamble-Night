@@ -280,7 +280,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 528c7c43fe5d66b40a3a07de0c72680b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  storyCoin: 500
 --- !u!4 &305606275
 Transform:
   m_ObjectHideFlags: 0
@@ -426,6 +425,8 @@ GameObject:
   - component: {fileID: 704483514}
   - component: {fileID: 704483513}
   - component: {fileID: 704483515}
+  - component: {fileID: 704483517}
+  - component: {fileID: 704483516}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -2246,7 +2247,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 67
     y: 70
-    width: 111
+    width: 109.2
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2256,6 +2257,7 @@ MonoBehaviour:
   eventHandler: {fileID: 704483509}
   commandList:
   - {fileID: 704483515}
+  - {fileID: 704483516}
   - {fileID: 704483508}
   - {fileID: 704483498}
   - {fileID: 704483499}
@@ -2323,6 +2325,7 @@ MonoBehaviour:
   - {fileID: 704483443}
   - {fileID: 704483444}
   - {fileID: 704483514}
+  - {fileID: 704483517}
   - {fileID: 704483513}
   suppressAllAutoSelections: 0
 --- !u!114 &704483511
@@ -2338,11 +2341,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 0, y: 0}
+  scrollPos: {x: 241.5, y: 174.79999}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 1
+  zoom: 0.625
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -2351,7 +2354,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 704483510}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 704483516}
   variables: []
   description: 
   stepPause: 0
@@ -2440,6 +2444,37 @@ MonoBehaviour:
   soundClip: {fileID: 8300000, guid: 27eab68aabc6d4f45947a0f50c014c7b, type: 3}
   volume: 1
   waitUntilFinished: 0
+--- !u!114 &704483516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704483442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 831c208af3cccf24b80cc6f3768919bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 81
+  indentLevel: 0
+  soundClip: {fileID: 8300000, guid: f07d156401ec9c846b78689cfab605e5, type: 3}
+  volume: 1
+  loop: 0
+--- !u!114 &704483517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704483442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bce3bd679be2c94196f3f6aaeb33f0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 80
+  indentLevel: 0
 --- !u!1 &715953340
 GameObject:
   m_ObjectHideFlags: 0
