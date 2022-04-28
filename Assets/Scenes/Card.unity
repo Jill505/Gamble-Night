@@ -725,11 +725,11 @@ MonoBehaviour:
   - 600
   - 725
   Y_axis:
-  - 360
+  - 340
   - 285
-  - 260
+  - 256
   - 285
-  - 360
+  - 340
   player: {fileID: 1900045329}
   AI: {fileID: 1900045333}
   angle: 50
@@ -787,7 +787,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 119, y: -31.6}
+  m_AnchoredPosition: {x: 117.3, y: -25.8}
   m_SizeDelta: {x: 266.56476, y: 113.90924}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &530388492
@@ -810,7 +810,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 970a679f5d722304c80790ab86b6801b, type: 3}
     m_FontSize: 22
     m_FontStyle: 0
     m_BestFit: 0
@@ -1000,7 +1000,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 430, y: -404.28}
+  m_AnchoredPosition: {x: 50, y: -49.407}
   m_SizeDelta: {x: 100, y: 98.70322}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &701607955
@@ -2096,6 +2096,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hit: {fileID: 962121618}
+  stand: {fileID: 1833805601}
   EventHorizon: {fileID: 412753257}
 --- !u!1 &1900045328
 GameObject:
@@ -2309,11 +2310,11 @@ MonoBehaviour:
   - 600
   - 725
   Y_axis:
-  - 360
+  - 340
   - 285
-  - 260
+  - 256
   - 285
-  - 360
+  - 340
   angle: 50
   i: 1
 --- !u!1 &2053999008

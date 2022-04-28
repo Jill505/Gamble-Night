@@ -9,10 +9,12 @@ public class Nextround : MonoBehaviour
     public void delaynextround()
     {
         hit.interactable = false;
+        stand.interactable = false;
         Invoke( "nextround" , 2.5f);
     }
 
     public Button hit;
+    public Button stand;
     public GameObject EventHorizon;
     public void nextround()
     {

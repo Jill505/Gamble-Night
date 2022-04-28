@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2819285933166162696}
   - component: {fileID: 9208758329845091512}
   m_Layer: 0
-  m_Name: Having Lived
+  m_Name: The Long Dark Main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42,9 +42,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 71d620018ee6c90489c5a340f8acda17, type: 3}
+  m_audioClip: {fileID: 8300000, guid: adf09a578f46a27499c712962085093c, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.091
   m_Pitch: 1
   Loop: 1
   Mute: 0
