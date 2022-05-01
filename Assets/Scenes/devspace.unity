@@ -190,7 +190,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: "\u9EDE\u6211\u91CD\u7F6E\u6574\u500B\u904A\u6232\u7684\u6578\u64DA\n"
 --- !u!222 &156259605
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -666,7 +666,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 953255937}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 953255935}
+        m_MethodName: setZero
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &953255937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1089,7 +1100,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u73FE\u5728\u6301\u6709\u91D1\u9322\uFF1A"
+  m_Text: "(\u6E2C\u8A66\u6578\u64DA-\u975EbgSystem.gold)\u73FE\u5728\u6301\u6709\u91D1\u9322\uFF1A"
 --- !u!222 &1528950498
 CanvasRenderer:
   m_ObjectHideFlags: 0

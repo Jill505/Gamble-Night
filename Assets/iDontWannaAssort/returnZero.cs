@@ -4,10 +4,18 @@ using UnityEngine;
 
 public class returnZero : MonoBehaviour
 {
+    int Zero = 0;
+    int shouldDiePhi;
+    void Awake()
+    {
+        bgSystem.gold = PlayerPrefs.GetInt("GambleGold");
+        shouldDiePhi = PlayerPrefs.GetInt("shouldDiePhi");
+
+    }
     // Start is called before the first frame update
     void Start()
     {
-        bgSystem.gold = PlayerPrefs.GetInt("GambleGold");
+        //bgSystem.gold = PlayerPrefs.GetInt("GambleGold");
         //setZeroo = 0;
     }
 
@@ -17,10 +25,13 @@ public class returnZero : MonoBehaviour
         
     }
     //int setZeroo;
-    void setZero()
+    public void setZero()
     {
         bgSystem.gold = 0;
         //setZeroo == PlayerPrefs.GetInt("GambleGold");
         PlayerPrefs.SetInt("GambleGold", bgSystem.gold);
+
+        shouldDiePhi = 0;
+        PlayerPrefs.SetInt("shouldDiePhi", shouldDiePhi);
     }
 }

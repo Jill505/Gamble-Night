@@ -2354,7 +2354,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 704483510}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 704483516}
   variables: []
   description: 
   stepPause: 0
@@ -2458,7 +2459,7 @@ MonoBehaviour:
   itemId: 81
   indentLevel: 0
   soundClip: {fileID: 8300000, guid: f07d156401ec9c846b78689cfab605e5, type: 3}
-  volume: 0.137
+  volume: 0.384
   loop: 0
 --- !u!114 &704483517
 MonoBehaviour:

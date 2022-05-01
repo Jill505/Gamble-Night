@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class loder : MonoBehaviour
 {
-    void Start()
+    void Awake()
     {
         bgSystem.gold = PlayerPrefs.GetInt("GambleGold");
     }
