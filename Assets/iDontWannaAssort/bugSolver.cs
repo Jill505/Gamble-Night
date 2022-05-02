@@ -7,5 +7,6 @@ public class bugSolver : MonoBehaviour
     void Start()
     {
         bgSystem.isGambling = false;
+        storyGam.storyCoin = 500;
     }
 }

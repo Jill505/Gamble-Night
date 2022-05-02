@@ -269,7 +269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: "\u53F2\u9EDB\u5E0C"
-  nameColor: {r: 1, g: 1, b: 1, a: 1}
+  nameColor: {r: 0, g: 0, b: 0, a: 1}
   soundEffect: {fileID: 0}
   portraits:
   - {fileID: 21300000, guid: cbb28a911ae53654f99efda91645a0af, type: 3}
@@ -394,7 +394,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: "\u54C8\u67CF"
-  nameColor: {r: 1, g: 1, b: 1, a: 1}
+  nameColor: {r: 0, g: 0, b: 0, a: 1}
   soundEffect: {fileID: 0}
   portraits:
   - {fileID: 21300000, guid: 5990f5092c589ec41ab5c4e72067b295, type: 3}
@@ -4363,7 +4363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: "\u963F\u52AA\u6BD4\u65AF"
-  nameColor: {r: 1, g: 1, b: 1, a: 1}
+  nameColor: {r: 0.3207547, g: 0.117844716, b: 0.04387683, a: 1}
   soundEffect: {fileID: 0}
   portraits:
   - {fileID: 21300000, guid: 65c2c910a9c85fa4b9cd9f14d50f562a, type: 3}
@@ -4538,7 +4538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: "\u6D41\u6D6A\u8C93"
-  nameColor: {r: 1, g: 1, b: 1, a: 1}
+  nameColor: {r: 0.066037714, g: 0.009033463, b: 0.009033463, a: 1}
   soundEffect: {fileID: 0}
   portraits: []
   portraitsFace: 0
@@ -4639,7 +4639,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: "\u745F\u514B"
-  nameColor: {r: 1, g: 1, b: 1, a: 1}
+  nameColor: {r: 0.4, g: 0.043137256, b: 0.043137256, a: 1}
   soundEffect: {fileID: 0}
   portraits:
   - {fileID: 21300000, guid: b4436fcb4df8331498eee96ac2c554c9, type: 3}
