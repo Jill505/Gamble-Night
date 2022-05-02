@@ -8,7 +8,7 @@ public class BackToMain : MonoBehaviour
     public GameObject _instance;
     public void toMain()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("Main");
         Destroy(_instance);
     }
     /* 故事模式時消失
