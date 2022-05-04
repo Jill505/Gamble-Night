@@ -33,5 +33,7 @@ public class returnZero : MonoBehaviour
 
         shouldDiePhi = 0;
         PlayerPrefs.SetInt("shouldDiePhi", shouldDiePhi);
+
+        PlayerPrefs.SetInt("paperA", Zero);
     }
 }

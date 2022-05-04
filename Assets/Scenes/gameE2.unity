@@ -1091,7 +1091,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: "\u4F60\u9084\u597D\u55CE\uFF1F"
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1773917756}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -2114,7 +2114,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1486849624}
   selectedCommands:
-  - {fileID: 1486849658}
+  - {fileID: 1486849590}
   variables: []
   description: 
   stepPause: 0
@@ -2289,7 +2289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 71
   indentLevel: 0
-  storyText: "\u6642\u800C\u5982\u6D74\u706B\u822C\u714E\u71AC\uFF0C\u6642\u800C\u5982\u6EBA\u6C34\u822C\u96E3\u7259\u96E3\u6371\uFF0C\u7136\u5F8C\u53C8\u662F\u5F77\u5F7F\u88AB\u6495\u88C2\u822C\u7684\u5287\u75DB\u8972\u64CA\u5168\u8EAB\u3002"
+  storyText: "\u6642\u800C\u5982\u6D74\u706B\u822C\u714E\u71AC\uFF0C\u6642\u800C\u5982\u6EBA\u6C34\u822C\u96E3\u6371\uFF0C\u7136\u5F8C\u53C8\u662F\u5F77\u5F7F\u88AB\u6495\u88C2\u822C\u7684\u5287\u75DB\u8972\u64CA\u5168\u8EAB\u3002"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2896,7 +2896,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &1486849655
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2910,7 +2910,7 @@ MonoBehaviour:
   indentLevel: 0
 --- !u!114 &1486849656
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2927,7 +2927,7 @@ MonoBehaviour:
   loop: 0
 --- !u!114 &1486849657
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2957,7 +2957,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &1486849658
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2987,7 +2987,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &1486849659
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3005,7 +3005,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &1486849660
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3035,7 +3035,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &1486849661
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3065,7 +3065,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &1486849662
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3082,7 +3082,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &1486849663
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3112,7 +3112,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &1486849664
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3142,7 +3142,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &1486849665
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3172,7 +3172,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &1486849666
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3202,7 +3202,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &1486849667
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3232,7 +3232,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &1486849668
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
