@@ -36,5 +36,8 @@ public class returnZero : MonoBehaviour
 
         PlayerPrefs.SetInt("paperA", Zero);
         PlayerPrefs.SetInt("paperB", Zero);
+        PlayerPrefs.SetInt("paperC", Zero);
+        PlayerPrefs.SetInt("rick", Zero);
+        PlayerPrefs.SetInt("charr", Zero);
     }
 }

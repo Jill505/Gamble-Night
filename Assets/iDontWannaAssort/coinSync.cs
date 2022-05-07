@@ -34,11 +34,11 @@ public class coinSync : MonoBehaviour
         
         if (mode == true)
         {
-            gameObject.GetComponent<Text>().text = "籌碼數量A：" + storyGam.storyCoin.ToString();
+            gameObject.GetComponent<Text>().text = "籌碼數量：" + storyGam.storyCoin.ToString();
         }
         else
         {
-            gameObject.GetComponent<Text>().text = "籌碼數量B：" + bgSystem.gold;
+            gameObject.GetComponent<Text>().text = "持有金錢量：" + bgSystem.gold;
         }
     }
 }
