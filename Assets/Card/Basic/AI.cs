@@ -92,17 +92,17 @@ public class AI : MonoBehaviour
     public double value;
     public void aigetcard()
     {
-        if(Level.win > 5)
+        if(Level.win == 1)
+        {
+            value = 7.5;
+        }
+        if(Level.win >= 2)
+        {
+            value = 8.5;
+        }
+        if(Level.win <= 0)
         {
             value = 6.5;
-        }
-        if(Level.win <= 5)
-        {
-            value = 6;
-        }
-        if(Level.win < 0)
-        {
-            value = 5.5;
         }
         if(aicardvalue <= value)
         {

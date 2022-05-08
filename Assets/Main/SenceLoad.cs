@@ -10,22 +10,20 @@ public class SenceLoad : MonoBehaviour
         SceneManager.LoadScene(3);
     }
 
-    public GameObject _instance;
     public void gogame()
     {
         SceneManager.LoadScene(6);
-        Destroy(_instance);
+        Destroy(GameObject.Find("The Long Dark Main"));
     }
 
     public void goshop()
     {
         SceneManager.LoadScene(5);
-        Destroy(_instance);
     }
 
     public void gocard()
     {
         SceneManager.LoadScene(7);
-        Destroy(_instance);
+        Destroy(GameObject.Find("The Long Dark Main"));
     }
 }
