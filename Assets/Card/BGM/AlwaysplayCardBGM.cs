@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,7 +19,7 @@ public class AlwaysplayCardBGM : MonoBehaviour
     }
     private void Awake() 
     {
-    	//此脚本永不销毁，并且每次进入初始场景时进行判断，若存在重复的则销毁
+    	//此腳本永不銷毀，且每次進入初始場景時進行判斷，若存在重複的則銷毀
         if (_instance == null)
         {
             _instance = this;
